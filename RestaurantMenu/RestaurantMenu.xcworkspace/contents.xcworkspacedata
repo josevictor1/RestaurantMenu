@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:In-House Frameworks"
+      name = "In-House Frameworks">
+      <FileRef
+         location = "group:Networking/Networking.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Core/Core.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:RestaurantMenu.xcodeproj">
+   </FileRef>
+</Workspace>
