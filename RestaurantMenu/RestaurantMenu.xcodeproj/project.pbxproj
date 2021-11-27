@@ -15,6 +15,11 @@
 		1A139FE12752C2C900781B4D /* RestaurantMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A139FE02752C2C900781B4D /* RestaurantMenuTests.swift */; };
 		1A139FEB2752C2C900781B4D /* RestaurantMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A139FEA2752C2C900781B4D /* RestaurantMenuUITests.swift */; };
 		1A139FED2752C2C900781B4D /* RestaurantMenuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A139FEC2752C2C900781B4D /* RestaurantMenuUITestsLaunchTests.swift */; };
+		1A95801F2752F3A400CF1ABB /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95801E2752F3A400CF1ABB /* MainCoordinator.swift */; };
+		1A9580232752F45000CF1ABB /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9580212752F45000CF1ABB /* Core.framework */; };
+		1A9580242752F45000CF1ABB /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9580212752F45000CF1ABB /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A9580252752F45000CF1ABB /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9580222752F45000CF1ABB /* Networking.framework */; };
+		1A9580262752F45000CF1ABB /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9580222752F45000CF1ABB /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1A9580272752F45000CF1ABB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A9580262752F45000CF1ABB /* Networking.framework in Embed Frameworks */,
+				1A9580242752F45000CF1ABB /* Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1A139FC62752C2C700781B4D /* RestaurantMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A139FC92752C2C700781B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +67,9 @@
 		1A139FE62752C2C900781B4D /* RestaurantMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A139FEA2752C2C900781B4D /* RestaurantMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuUITests.swift; sourceTree = "<group>"; };
 		1A139FEC2752C2C900781B4D /* RestaurantMenuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1A95801E2752F3A400CF1ABB /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		1A9580212752F45000CF1ABB /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A9580222752F45000CF1ABB /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A9580252752F45000CF1ABB /* Networking.framework in Frameworks */,
+				1A9580232752F45000CF1ABB /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +106,7 @@
 				1A139FDF2752C2C900781B4D /* RestaurantMenuTests */,
 				1A139FE92752C2C900781B4D /* RestaurantMenuUITests */,
 				1A139FC72752C2C700781B4D /* Products */,
+				1A9580202752F45000CF1ABB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +123,7 @@
 		1A139FC82752C2C700781B4D /* RestaurantMenu */ = {
 			isa = PBXGroup;
 			children = (
+				1A95801D2752F39100CF1ABB /* Coordinator */,
 				1A139FFB2752C5A800781B4D /* Scenes */,
 				1A139FFA2752C57400781B4D /* AppDelegate */,
 				1A139FF92752C55F00781B4D /* Supporting Files */,
@@ -188,6 +215,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		1A95801D2752F39100CF1ABB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1A95801E2752F3A400CF1ABB /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1A9580202752F45000CF1ABB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A9580212752F45000CF1ABB /* Core.framework */,
+				1A9580222752F45000CF1ABB /* Networking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -198,6 +242,7 @@
 				1A139FC22752C2C700781B4D /* Sources */,
 				1A139FC32752C2C700781B4D /* Frameworks */,
 				1A139FC42752C2C700781B4D /* Resources */,
+				1A9580272752F45000CF1ABB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -319,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A139FCE2752C2C700781B4D /* MenuViewController.swift in Sources */,
+				1A95801F2752F3A400CF1ABB /* MainCoordinator.swift in Sources */,
 				1A139FCA2752C2C700781B4D /* AppDelegate.swift in Sources */,
 				1A139FCC2752C2C700781B4D /* SceneDelegate.swift in Sources */,
 			);
