@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A139FCA2752C2C700781B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A139FC92752C2C700781B4D /* AppDelegate.swift */; };
 		1A139FCC2752C2C700781B4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A139FCB2752C2C700781B4D /* SceneDelegate.swift */; };
-		1A139FCE2752C2C700781B4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A139FCD2752C2C700781B4D /* ViewController.swift */; };
+		1A139FCE2752C2C700781B4D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A139FCD2752C2C700781B4D /* MenuViewController.swift */; };
 		1A139FD32752C2C800781B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A139FD22752C2C800781B4D /* Assets.xcassets */; };
 		1A139FD62752C2C800781B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A139FD42752C2C800781B4D /* LaunchScreen.storyboard */; };
 		1A139FE12752C2C900781B4D /* RestaurantMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A139FE02752C2C900781B4D /* RestaurantMenuTests.swift */; };
@@ -38,7 +38,7 @@
 		1A139FC62752C2C700781B4D /* RestaurantMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A139FC92752C2C700781B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A139FCB2752C2C700781B4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1A139FCD2752C2C700781B4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A139FCD2752C2C700781B4D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1A139FD22752C2C800781B4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A139FD52752C2C800781B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A139FD72752C2C800781B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,9 +143,49 @@
 		1A139FFB2752C5A800781B4D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				1A139FCD2752C2C700781B4D /* ViewController.swift */,
+				1A9580162752F23600CF1ABB /* Menu */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1A9580162752F23600CF1ABB /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				1A95801A2752F27D00CF1ABB /* Model */,
+				1A9580182752F26000CF1ABB /* View */,
+				1A9580172752F25400CF1ABB /* ViewController */,
+				1A9580192752F27700CF1ABB /* ViewModel */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		1A9580172752F25400CF1ABB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1A139FCD2752C2C700781B4D /* MenuViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1A9580182752F26000CF1ABB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A9580192752F27700CF1ABB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1A95801A2752F27D00CF1ABB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A139FCE2752C2C700781B4D /* ViewController.swift in Sources */,
+				1A139FCE2752C2C700781B4D /* MenuViewController.swift in Sources */,
 				1A139FCA2752C2C700781B4D /* AppDelegate.swift in Sources */,
 				1A139FCC2752C2C700781B4D /* SceneDelegate.swift in Sources */,
 			);
