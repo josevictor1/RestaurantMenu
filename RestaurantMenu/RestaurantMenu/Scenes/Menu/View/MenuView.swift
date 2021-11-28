@@ -12,6 +12,9 @@ final class MenuView: UIView {
     private let titleLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.font = .montserrat(ofSize: 26, weight: .regular)
+        titleLabel.text = "MENU"
+        titleLabel.textColor = .white
+        titleLabel.textAlignment = .center
         return titleLabel
     }()
     
@@ -54,8 +57,11 @@ final class MenuView: UIView {
     
     private func setUpMenuSectionsCollectionViewConstraints() {
         let constraints = [
-            menuSectionsCollectionView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 44),
-            menuSectionsCollectionView.heightAnchor.constraint(equalToConstant: 100)
+            menuSectionsCollectionView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor,
+                                                            constant: 44),
+            menuSectionsCollectionView.heightAnchor.constraint(equalToConstant: 100),
+            menuSectionsCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 30),
+            menuSectionsCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -30)
         ]
         place(menuSectionsCollectionView, with: constraints)
     }
@@ -63,8 +69,8 @@ final class MenuView: UIView {
     private func setUpMenuItemsTableViewConstraints() {
         let constraints = [
             menuItemsTableView.topAnchor.constraint(equalTo: menuSectionsCollectionView.bottomAnchor),
-            menuItemsTableView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            menuItemsTableView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            menuItemsTableView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 30),
+            menuItemsTableView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -30),
             menuItemsTableView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ]
         place(menuItemsTableView, with: constraints)

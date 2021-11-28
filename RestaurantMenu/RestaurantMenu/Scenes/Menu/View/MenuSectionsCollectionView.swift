@@ -9,4 +9,21 @@ import UIKit
 
 final class MenuSectionsCollectionView: UIView {
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setUp()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setUp()
+    }
+    
+    private func setUp() {
+        setUpBackgroundColor()
+    }
+    
+    private func setUpBackgroundColor() {
+        backgroundColor = .red
+    }
 }
