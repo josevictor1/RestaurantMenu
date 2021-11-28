@@ -8,6 +8,12 @@
 import UIKit
 
 final class MenuViewController: UIViewController {
+    
+    private let menuView = MenuView()
+    
+    override func loadView() {
+        view = menuView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

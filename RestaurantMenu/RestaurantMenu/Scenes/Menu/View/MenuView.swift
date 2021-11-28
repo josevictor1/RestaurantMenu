@@ -7,14 +7,29 @@
 
 import UIKit
 
-class MenuView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+final class MenuView: UIView {
+    
+    private let titleLabel: UILabel = {
+        let titleLabel = UILabel()
+        
+        return titleLabel
+    }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setUp()
     }
-    */
-
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setUp()
+    }
+    
+    private func setUp() {
+        setUpBackgroundColor()
+    }
+    
+    private func setUpBackgroundColor() {
+        backgroundColor = .systemBackground
+    }
 }
