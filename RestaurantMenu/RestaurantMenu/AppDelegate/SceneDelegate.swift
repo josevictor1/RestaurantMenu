@@ -14,6 +14,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         setWindow(with: scene)
+        setUpNavigationFlow()
     }
     
     private func setWindow(with scene: UIScene) {
@@ -21,16 +22,20 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
     }
     
-    private func setUpMainCoordinator() {
+    private func setUpNavigationFlow() {
         let navigationController = UINavigationController()
         setRootNavigationViewController(navigationController)
-        mainCoordinator = MainCoordinator(navigationController: navigationController)
-        mainCoordinator?.start()
+        setUpMainCoordinator(with: navigationController)
     }
     
     private func setRootNavigationViewController(_ navigationController: UINavigationController) {
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+    }
+    
+    private func setUpMainCoordinator(with navigationController: UINavigationController) {
+        mainCoordinator = MainCoordinator(navigationController: navigationController)
+        mainCoordinator?.start()
     }
 }
 
