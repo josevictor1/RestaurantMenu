@@ -42,6 +42,8 @@
 		1A9580632753226100CF1ABB /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A9580522753226100CF1ABB /* Montserrat-BoldItalic.ttf */; };
 		1A9580642753226100CF1ABB /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A9580532753226100CF1ABB /* Montserrat-SemiBoldItalic.ttf */; };
 		1A9580652753226100CF1ABB /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A9580542753226100CF1ABB /* Montserrat-ExtraBoldItalic.ttf */; };
+		1A95806727532A0B00CF1ABB /* MenuSectionsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95806627532A0B00CF1ABB /* MenuSectionsCollectionView.swift */; };
+		1A95806927532D9F00CF1ABB /* MenuItemsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95806827532D9F00CF1ABB /* MenuItemsTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,8 @@
 		1A9580522753226100CF1ABB /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
 		1A9580532753226100CF1ABB /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		1A9580542753226100CF1ABB /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		1A95806627532A0B00CF1ABB /* MenuSectionsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSectionsCollectionView.swift; sourceTree = "<group>"; };
+		1A95806827532D9F00CF1ABB /* MenuItemsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +248,8 @@
 			isa = PBXGroup;
 			children = (
 				1A95802827530F9C00CF1ABB /* MenuView.swift */,
+				1A95806627532A0B00CF1ABB /* MenuSectionsCollectionView.swift */,
+				1A95806827532D9F00CF1ABB /* MenuItemsTableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -466,9 +472,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A95802927530F9C00CF1ABB /* MenuView.swift in Sources */,
+				1A95806727532A0B00CF1ABB /* MenuSectionsCollectionView.swift in Sources */,
 				1A139FCE2752C2C700781B4D /* MenuViewController.swift in Sources */,
 				1A95801F2752F3A400CF1ABB /* MainCoordinator.swift in Sources */,
 				1A139FCA2752C2C700781B4D /* AppDelegate.swift in Sources */,
+				1A95806927532D9F00CF1ABB /* MenuItemsTableView.swift in Sources */,
 				1A95803327531EAC00CF1ABB /* UIFont+.swift in Sources */,
 				1A139FCC2752C2C700781B4D /* SceneDelegate.swift in Sources */,
 			);
