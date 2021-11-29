@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+extension MenuSection {
+    
+    init(response: MenuSectionResponse) {
+        self.init(title: response.sectionName,
+                  isEnabled: false)
+    }
+}

@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+// MARK: - MenuSection
+struct MenuSectionResponse {
+    let sectionName: String
+    let menuItems: [MenuItemResponse]
+}
+
+extension MenuSectionResponse: Decodable {
+    
+    enum CodingKeys: String, CodingKey {
+        case sectionName = "section_name"
+        case menuItems = "menu_items"
+    }
+}

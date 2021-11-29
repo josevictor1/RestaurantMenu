@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+extension MenuItem {
+    
+    init(response: MenuItemResponse) {
+        self.init(title: response.name,
+                  ingredients: response.description,
+                  value: response.priceFormmated)
+    }
+}

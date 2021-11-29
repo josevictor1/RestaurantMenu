@@ -24,6 +24,10 @@ final class MainCoordinator: NavigationCoordinator {
     
     private func makeMenuViewController() -> MenuViewController {
         let menuViewController = MenuViewController()
+        let menuDataSouce = MenuDataSource()
+        let menuViewModel = MenuViewModel(delegate: menuViewController,
+                                          dataSource: menuDataSouce)
+        menuViewController.viewModel = menuViewModel
         return menuViewController
     }
 }
