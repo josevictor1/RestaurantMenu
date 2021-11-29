@@ -12,7 +12,6 @@
 		1A139FCE2752C2C700781B4D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A139FCD2752C2C700781B4D /* MenuViewController.swift */; };
 		1A139FD32752C2C800781B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A139FD22752C2C800781B4D /* Assets.xcassets */; };
 		1A139FD62752C2C800781B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A139FD42752C2C800781B4D /* LaunchScreen.storyboard */; };
-		1A139FE12752C2C900781B4D /* RestaurantMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A139FE02752C2C900781B4D /* RestaurantMenuTests.swift */; };
 		1A139FEB2752C2C900781B4D /* RestaurantMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A139FEA2752C2C900781B4D /* RestaurantMenuUITests.swift */; };
 		1A139FED2752C2C900781B4D /* RestaurantMenuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A139FEC2752C2C900781B4D /* RestaurantMenuUITestsLaunchTests.swift */; };
 		1A95801F2752F3A400CF1ABB /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95801E2752F3A400CF1ABB /* MainCoordinator.swift */; };
@@ -66,6 +65,7 @@
 		1A9580982754552900CF1ABB /* MenuSection+MenuSectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9580972754552900CF1ABB /* MenuSection+MenuSectionResponse.swift */; };
 		1A95809B275457D700CF1ABB /* MenuItem+MenuItemResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95809A275457D700CF1ABB /* MenuItem+MenuItemResponse.swift */; };
 		1A95809D2754591C00CF1ABB /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95809C2754591C00CF1ABB /* Double+.swift */; };
+		1AAD7D3B27551C3900507B92 /* MenuViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAD7D3A27551C3900507B92 /* MenuViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,7 +109,6 @@
 		1A139FD52752C2C800781B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A139FD72752C2C800781B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A139FDC2752C2C900781B4D /* RestaurantMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A139FE02752C2C900781B4D /* RestaurantMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuTests.swift; sourceTree = "<group>"; };
 		1A139FE62752C2C900781B4D /* RestaurantMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A139FEA2752C2C900781B4D /* RestaurantMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuUITests.swift; sourceTree = "<group>"; };
 		1A139FEC2752C2C900781B4D /* RestaurantMenuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -162,6 +161,7 @@
 		1A9580972754552900CF1ABB /* MenuSection+MenuSectionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuSection+MenuSectionResponse.swift"; sourceTree = "<group>"; };
 		1A95809A275457D700CF1ABB /* MenuItem+MenuItemResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+MenuItemResponse.swift"; sourceTree = "<group>"; };
 		1A95809C2754591C00CF1ABB /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
+		1AAD7D3A27551C3900507B92 /* MenuViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,7 +227,7 @@
 		1A139FDF2752C2C900781B4D /* RestaurantMenuTests */ = {
 			isa = PBXGroup;
 			children = (
-				1A139FE02752C2C900781B4D /* RestaurantMenuTests.swift */,
+				1AAD7D3627551BD200507B92 /* Scenes */,
 			);
 			path = RestaurantMenuTests;
 			sourceTree = "<group>";
@@ -442,6 +442,38 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		1AAD7D3627551BD200507B92 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1AAD7D3727551BD900507B92 /* Menu */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1AAD7D3727551BD900507B92 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				1AAD7D3927551C1600507B92 /* Mocks */,
+				1AAD7D3827551C0F00507B92 /* ViewModel */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		1AAD7D3827551C0F00507B92 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1AAD7D3A27551C3900507B92 /* MenuViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1AAD7D3927551C1600507B92 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -514,6 +546,7 @@
 					};
 					1A139FDB2752C2C900781B4D = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 						TestTargetID = 1A139FC52752C2C700781B4D;
 					};
 					1A139FE52752C2C900781B4D = {
@@ -630,7 +663,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A139FE12752C2C900781B4D /* RestaurantMenuTests.swift in Sources */,
+				1AAD7D3B27551C3900507B92 /* MenuViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -847,6 +880,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 77FV36N6JL;
@@ -861,6 +895,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.josevictor.RestaurantMenuTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestaurantMenu.app/RestaurantMenu";
@@ -872,6 +907,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 77FV36N6JL;

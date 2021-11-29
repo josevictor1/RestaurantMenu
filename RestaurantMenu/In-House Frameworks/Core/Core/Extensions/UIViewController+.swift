@@ -28,10 +28,22 @@ public extension UIViewController {
         activityIndicator.stop()
     }
 
-    func presentErrorAlert(with title: String = "Error", message: String, handler: ((UIAlertAction) -> Void)? = nil) {
+    func presentErrorAlert(withTitle title: String = "Error",
+                           message: String,
+                           buttonTitle: String? = nil,
+                           handler: ((UIAlertAction) -> Void)? = nil,
+                           dismissHandler: (() -> Void)? = nil) {
         let alert = UIAlertController(title: title,
                                       message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: handler))
+        if let buttonTitle = buttonTitle {
+            alert.addAction(UIAlertAction(title: buttonTitle, style: .default, handler: handler))
+        }
+        
+        let dismissAction = UIAlertAction(title: "Ok", style: .default) { [weak self]  _ in
+            self?.dismiss(animated: true, completion: dismissHandler)
+        }
+        
+        alert.addAction(dismissAction)
         present(alert, animated: true)
     }
 }
