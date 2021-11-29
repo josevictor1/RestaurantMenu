@@ -38,4 +38,3 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         mainCoordinator?.start()
     }
 }
-

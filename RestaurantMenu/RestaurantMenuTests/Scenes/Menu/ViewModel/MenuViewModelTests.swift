@@ -28,7 +28,7 @@ final class MenuViewModelTests: XCTestCase {
     func testLoadRestaurantMenuSectionsData() {
         let viewControllerMock = MenuViewControllerMock()
         let expectation = XCTestExpectation(description: "Should load menu sections")
-        viewControllerMock.onMenuSctionsChange =  { menuSections in
+        viewControllerMock.onMenuSctionsChange = { menuSections in
             expectation.fulfill()
             XCTAssertFalse(menuSections.isEmpty)
         }
@@ -58,7 +58,7 @@ final class MenuViewModelTests: XCTestCase {
     func testLoadRestaurantMenuSectionsWithFirstSectionEnabledData() {
         let viewControllerMock = MenuViewControllerMock()
         let expectation = XCTestExpectation(description: "Should load menu sections")
-        viewControllerMock.onMenuSctionsChange =  { menuSections in
+        viewControllerMock.onMenuSctionsChange = { menuSections in
             expectation.fulfill()
             guard let firstSection = menuSections.first else { return XCTFail() }
             XCTAssertTrue(firstSection.isEnabled)
@@ -77,7 +77,7 @@ final class MenuViewModelTests: XCTestCase {
         let sut = makeSUT(delegate: viewControllerMock)
         sut.loadRestaurantData()
         let selectedIndex = 2
-        viewControllerMock.onMenuSctionsChange =  { menuSections in
+        viewControllerMock.onMenuSctionsChange = { menuSections in
             expectation.fulfill()
             XCTAssertNotNil(menuSections[selectedIndex])
             XCTAssertTrue(menuSections[selectedIndex].isEnabled)
@@ -94,7 +94,7 @@ final class MenuViewModelTests: XCTestCase {
         let sut = makeSUT(delegate: viewControllerMock)
         sut.loadRestaurantData()
         let selectedIndex = 2
-        viewControllerMock.onMenuSctionsChange =  { menuSections in
+        viewControllerMock.onMenuSctionsChange = { menuSections in
             expectation.fulfill()
             let numberOfActiveSections = menuSections.filter { $0.isEnabled }.count
             XCTAssertEqual(numberOfActiveSections, 1)

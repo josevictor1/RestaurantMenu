@@ -46,7 +46,7 @@ final class MenuViewModel: MenuViewModelProtocol {
     
     private func handleSuccessOnLoadRestaurantData(_ response: RestaurantResponse) {
         updateRestaurantName(response.restaurantName)
-        if let menu = validMenu(from: response)  {
+        if let menu = validMenu(from: response) {
             updateRestaurantMenu(menu)
         } else {
             failedOnLoadMenuData()

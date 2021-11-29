@@ -26,7 +26,7 @@ final class MenuSectionsCollectionView: UIView {
     }()
     
     private let cellRegistration: MenuSectionsCollectionViewCellRegistration = {
-        MenuSectionsCollectionViewCellRegistration { cell, indexPath, section in
+        MenuSectionsCollectionViewCellRegistration { cell, _, section in
             cell.set(menuSection: section)
         }
     }()

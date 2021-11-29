@@ -55,7 +55,7 @@ final class MenuView: UIView {
     private func setUpTitleLabelConstraints() {
         let constraints = [
             titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 168),
-            titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
+            titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor)
         ]
         place(titleLabel, with: constraints)
     }

@@ -10,7 +10,7 @@ import Networking
 struct RestaurantRequest: Request {
     let restaurantID: String
     var method: HTTPMethod { .get }
-    var scheme: URIScheme  { .https }
+    var scheme: URIScheme { .https }
     var host: String { "api.documenu.com" }
     var path: String { "/v2/restaurant/\(restaurantID)" }
     var body: Encodable?

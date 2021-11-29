@@ -14,8 +14,8 @@ extension UINavigationBarAppearance {
         navigationBarAppearance.configureWithOpaqueBackground()
         navigationBarAppearance.shadowColor = .disabledSection
         navigationBarAppearance.backgroundColor = .appBackground
-        navigationBarAppearance.titleTextAttributes = [.font : UIFont.montserrat(ofSize: 16, weight: .regular),
-                                                .strokeColor : UIColor.itemTitle]
+        navigationBarAppearance.titleTextAttributes = [.font: UIFont.montserrat(ofSize: 16, weight: .regular),
+                                                .strokeColor: UIColor.itemTitle]
         return navigationBarAppearance
     }
 }
