@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "EA9727B9-95FD-4E83-97A4-89A05F5DED6F",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:RestaurantMenu.xcodeproj",
+      "identifier" : "1A139FC52752C2C700781B4D",
+      "name" : "RestaurantMenu"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:RestaurantMenu.xcodeproj",
+        "identifier" : "1A139FDB2752C2C900781B4D",
+        "name" : "RestaurantMenuTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:RestaurantMenu.xcodeproj",
+        "identifier" : "1A139FE52752C2C900781B4D",
+        "name" : "RestaurantMenuUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

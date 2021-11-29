@@ -14,4 +14,7 @@
    <FileRef
       location = "group:RestaurantMenu.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:RestaurantMenu.xctestplan">
+   </FileRef>
 </Workspace>
