@@ -26,7 +26,7 @@ public struct Endpoint {
     /// Attribute that defines request query strings
     let queryStrings: [String: String]?
 
-    var queryItem: [URLQueryItem] {
-        queryStrings?.map({ URLQueryItem(name: $0.key, value: $0.value) }) ?? []
+    var queryItem: [URLQueryItem]? {
+        queryStrings?.map { URLQueryItem(name: $0.key, value: $0.value) }
     }
 }
