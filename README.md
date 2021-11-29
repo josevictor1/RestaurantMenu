@@ -1,4 +1,7 @@
 # RestaurantMenu
+
+[![CI](https://github.com/josevictor1/RestaurantMenu/actions/workflows/main_flow.yml/badge.svg)](https://github.com/josevictor1/RestaurantMenu/actions/workflows/main_flow.yml)
+
 The Restaurant Menu app shows a complete restaurant menu in an elegant style.
 
 ## Demo 
