@@ -66,6 +66,9 @@
 		1A95809B275457D700CF1ABB /* MenuItem+MenuItemResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95809A275457D700CF1ABB /* MenuItem+MenuItemResponse.swift */; };
 		1A95809D2754591C00CF1ABB /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95809C2754591C00CF1ABB /* Double+.swift */; };
 		1AAD7D3B27551C3900507B92 /* MenuViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAD7D3A27551C3900507B92 /* MenuViewModelTests.swift */; };
+		1AAD7D3D2755208800507B92 /* MenuViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAD7D3C2755208800507B92 /* MenuViewControllerMock.swift */; };
+		1AAD7D3F275522B300507B92 /* MenuDataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAD7D3E275522B300507B92 /* MenuDataSourceMock.swift */; };
+		1AAD7D422755233400507B92 /* RestaurantResponse+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAD7D412755233400507B92 /* RestaurantResponse+Mock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +165,9 @@
 		1A95809A275457D700CF1ABB /* MenuItem+MenuItemResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+MenuItemResponse.swift"; sourceTree = "<group>"; };
 		1A95809C2754591C00CF1ABB /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
 		1AAD7D3A27551C3900507B92 /* MenuViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModelTests.swift; sourceTree = "<group>"; };
+		1AAD7D3C2755208800507B92 /* MenuViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewControllerMock.swift; sourceTree = "<group>"; };
+		1AAD7D3E275522B300507B92 /* MenuDataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDataSourceMock.swift; sourceTree = "<group>"; };
+		1AAD7D412755233400507B92 /* RestaurantResponse+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestaurantResponse+Mock.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,8 +476,19 @@
 		1AAD7D3927551C1600507B92 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				1AAD7D40275522D700507B92 /* Extensions */,
+				1AAD7D3C2755208800507B92 /* MenuViewControllerMock.swift */,
+				1AAD7D3E275522B300507B92 /* MenuDataSourceMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		1AAD7D40275522D700507B92 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1AAD7D412755233400507B92 /* RestaurantResponse+Mock.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -663,7 +680,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AAD7D3F275522B300507B92 /* MenuDataSourceMock.swift in Sources */,
+				1AAD7D422755233400507B92 /* RestaurantResponse+Mock.swift in Sources */,
 				1AAD7D3B27551C3900507B92 /* MenuViewModelTests.swift in Sources */,
+				1AAD7D3D2755208800507B92 /* MenuViewControllerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
