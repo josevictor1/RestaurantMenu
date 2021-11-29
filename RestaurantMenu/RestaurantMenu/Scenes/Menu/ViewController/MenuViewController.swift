@@ -66,7 +66,12 @@ extension MenuViewController: MenuViewModelDelegate {
     
     func didFailedOnLoadRestaurantData() {
         stopLoading()
-        presentErrorAlert(message: "Failed")
-        //presentErrorAlert(message: <#T##String#>, handler: <#T##((UIAlertAction) -> Void)?##((UIAlertAction) -> Void)?##(UIAlertAction) -> Void#>)
+        showAlertError()
+    }
+    
+    private func showAlertError() {
+        presentErrorAlert(message: "Failed to load menu data", buttonTitle: "Try Again") { [weak self] _ in
+            self?.loadRestaurantData()
+        }
     }
 }
