@@ -15,6 +15,9 @@ jobs:
 
     - name: Select Xcode
       run: sudo xcode-select -switch /Applications/Xcode.app
+      
+    - name: Open Project Folder
+      run: cd RestaurantMenu
 
     - name: Build and test
       run: xcodebuild clean build test -workspace RestaurantMenu.xcworkspace -scheme "RestaurantMenu" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 11" -enableCodeCoverage YES ONLY_ACTIVE_ARCH=YES VALID_ARCHS=x86_64 CODE_SIGNING_REQUIRED=NO 
