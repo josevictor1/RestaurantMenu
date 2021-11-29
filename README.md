@@ -1,6 +1,8 @@
 # RestaurantMenu
 
 [![CI](https://github.com/josevictor1/RestaurantMenu/actions/workflows/main_flow.yml/badge.svg)](https://github.com/josevictor1/RestaurantMenu/actions/workflows/main_flow.yml)
+[![codecov](https://codecov.io/gh/josevictor1/RestaurantMenu/branch/main/graph/badge.svg?token=yvhIbInGEE)](https://codecov.io/gh/josevictor1/RestaurantMenu)
+
 
 The Restaurant Menu app shows a complete restaurant menu in an elegant style.
 
