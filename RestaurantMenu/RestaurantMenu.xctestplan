@@ -25,6 +25,7 @@
       }
     },
     {
+      "enabled" : false,
       "target" : {
         "containerPath" : "container:RestaurantMenu.xcodeproj",
         "identifier" : "1A139FE52752C2C900781B4D",
