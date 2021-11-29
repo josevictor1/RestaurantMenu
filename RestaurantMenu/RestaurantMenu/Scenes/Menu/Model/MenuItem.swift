@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct MenuItem {
+    let uuid = UUID()
+    let title: String
+    let ingredients: String
+    let value: String
+}
+
+extension MenuItem: Hashable { }
