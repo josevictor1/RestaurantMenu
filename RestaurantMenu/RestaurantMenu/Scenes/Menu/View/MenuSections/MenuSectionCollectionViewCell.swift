@@ -14,12 +14,15 @@ final class MenuSectionCollectionViewCell: UICollectionViewCell {
         let titleLabel = UILabel()
         titleLabel.font = .montserrat(ofSize: 24, weight: .regular)
         titleLabel.textColor = .disabledSection
+        titleLabel.numberOfLines = .zero
+        titleLabel.textAlignment = .center
+        titleLabel.adjustsFontSizeToFitWidth = true
         return titleLabel
     }()
     
     private let activeLineView: UIView = {
         let activeLineView = UIView()
-        activeLineView.backgroundColor = .itemsTitle
+        activeLineView.backgroundColor = .itemTitle
         activeLineView.isHidden = true
         return activeLineView
     }()
@@ -41,8 +44,10 @@ final class MenuSectionCollectionViewCell: UICollectionViewCell {
     
     private func setUpTitleLabelConstraints() {
         let constraints = [
-            titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
-            titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
+            titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 20),
+            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20),
+            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10)
         ]
         place(titleLabel, with: constraints)
     }
@@ -57,13 +62,26 @@ final class MenuSectionCollectionViewCell: UICollectionViewCell {
         place(activeLineView, with: constraints)
     }
     
-    func enableSection() {
+    func set(menuSection: MenuSection) {
+        titleLabel.text = menuSection.title
+        updateSectionState(with: menuSection)
+    }
+    
+    private func updateSectionState(with menuSection: MenuSection) {
+        if menuSection.isEnabled {
+            enableSection()
+        } else {
+            disableSection()
+        }
+    }
+    
+    private func enableSection() {
         titleLabel.textColor = .menuTitle
         activeLineView.isHidden = false
     }
     
-    func disableSection() {
+    private func disableSection() {
         titleLabel.textColor = .disabledSection
-        activeLineView.isHidden = false
+        activeLineView.isHidden = true
     }
 }

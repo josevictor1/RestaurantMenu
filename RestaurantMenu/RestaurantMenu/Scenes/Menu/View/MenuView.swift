@@ -9,11 +9,16 @@ import UIKit
 
 final class MenuView: UIView {
     
+    var onSectionTapped: ((Int) -> Void)? {
+        get { menuSectionsCollectionView.onSectionTapped }
+        set { menuSectionsCollectionView.onSectionTapped = newValue }
+    }
+    
     private let titleLabel: UILabel = {
         let titleLabel = UILabel()
-        titleLabel.font = .montserrat(ofSize: 26, weight: .regular)
+        titleLabel.font = .montserrat(ofSize: 16, weight: .regular)
         titleLabel.text = "MENU"
-        titleLabel.textColor = .white
+        titleLabel.textColor = .menuTitle
         titleLabel.textAlignment = .center
         return titleLabel
     }()
@@ -38,7 +43,7 @@ final class MenuView: UIView {
     }
     
     private func setUpBackgroundColor() {
-        backgroundColor = .systemBackground
+        backgroundColor = .appBackground
     }
     
     private func setUpConstraints() {
@@ -49,7 +54,7 @@ final class MenuView: UIView {
     
     private func setUpTitleLabelConstraints() {
         let constraints = [
-            titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 75),
+            titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 168),
             titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
         ]
         place(titleLabel, with: constraints)
@@ -74,5 +79,13 @@ final class MenuView: UIView {
             menuItemsTableView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ]
         place(menuItemsTableView, with: constraints)
+    }
+    
+    func set(menuSections: [MenuSection]) {
+        menuSectionsCollectionView.set(menuSections: menuSections)
+    }
+    
+    func set(menuItems: [MenuItem]) {
+        menuItemsTableView.set(menuItems: menuItems)
     }
 }
