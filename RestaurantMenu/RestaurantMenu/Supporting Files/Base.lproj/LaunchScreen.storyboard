@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BF-gg-aAo">
-                                <rect key="frame" x="0.0" y="383.5" width="414" height="129.5"/>
+                                <rect key="frame" x="0.0" y="532" width="414" height="129.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="The Restaurant Menu">
                                         <attributes>
@@ -28,14 +28,23 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant-g732ff52ad_1920" translatesAutoresizingMaskIntoConstraints="NO" id="Gp8-IR-izS">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Tof-uI-e9u"/>
+                                    <constraint firstAttribute="height" constant="128" id="waK-Im-kCc"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="9BF-gg-aAo" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="3Yi-Fq-Tco"/>
+                            <constraint firstItem="Gp8-IR-izS" firstAttribute="centerX" secondItem="9BF-gg-aAo" secondAttribute="centerX" id="10D-QU-RfO"/>
+                            <constraint firstItem="9BF-gg-aAo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="3Yi-Fq-Tco"/>
                             <constraint firstAttribute="trailing" secondItem="9BF-gg-aAo" secondAttribute="trailing" id="H8u-j6-OYe"/>
                             <constraint firstItem="9BF-gg-aAo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Lbz-t6-oK9"/>
-                            <constraint firstItem="9BF-gg-aAo" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="N9d-pO-xpD"/>
+                            <constraint firstItem="9BF-gg-aAo" firstAttribute="top" secondItem="Gp8-IR-izS" secondAttribute="bottom" constant="20" id="Yec-OR-F2E"/>
+                            <constraint firstItem="Gp8-IR-izS" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="fCn-vn-GYk"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -45,6 +54,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="restaurant-g732ff52ad_1920" width="1920" height="1325"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
