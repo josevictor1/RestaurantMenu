@@ -8,7 +8,7 @@ The Restaurant Menu app shows a complete restaurant menu in an elegant style.
  
 ### Video Demo
 
-[Link to video demo](https://drive.google.com/file/d/10aMzjtUbSorOq7vYrs3FU0QA9xMnddjV/view?usp=sharing), with my comments 😅
+[Link to video demo](https://drive.google.com/file/d/10aMzjtUbSorOq7vYrs3FU0QA9xMnddjV/view?usp=sharing), with my comments 😅.
 
 ## Description 🗒
 
